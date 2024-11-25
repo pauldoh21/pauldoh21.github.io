@@ -1,0 +1,231 @@
+.navbar-landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all 1s ease; /* Smooth transition */
+    width:100vw;
+    height:100vh;
+    position: fixed;
+    left:0vw;
+}
+
+.navbar-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all 1s ease; /* Smooth transition */
+    width:60vw;
+    height:100vh;
+    position: fixed;
+    left:-10vw;
+    z-index: 2;
+    overflow: visible;
+    /*border-style: solid;*/
+  }
+
+  .navbar-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all 1s ease; /* Smooth transition */
+    width:20vw;
+    height:100vh;
+    position: fixed;
+    left:0vw;
+    overflow: visible;
+    z-index: 6;
+  }
+  
+  .power-button {
+    padding: 15px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: radial-gradient(circle, rgb(49, 49, 49) 0%, rgb(112, 110, 108) 10%, rgb(173, 173, 173) 38%, rgb(216, 205, 175) 54%, rgb(104, 104, 104) 68%, rgb(77, 77, 77) 70%);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    min-width: 100px;
+    width:8vw;
+    height:auto;
+    filter: brightness(70%) sepia(0%) hue-rotate(130deg)
+  }
+  
+  .power-button:hover {
+    transform: scale(1.1);
+    filter: brightness(90%) sepia(100%) hue-rotate(110deg)
+  }
+
+  .logo-container {
+    position: relative;
+    width: 50%; /* Adjust based on the size of the circle */
+    height: 50%;
+    margin: auto;
+  }
+
+  /*Should do what is done for buttons with logos*/
+
+  .logo-big {
+    padding: 10px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    width: 40vw;
+    min-width: 100px;
+    height:auto;
+    transition: all 1s ease;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    filter: blur(0px);
+  }
+
+  .logo-small {
+    padding: 10px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    width: 15vw; /* Test with fixed values */
+    min-width: 100px;
+    height:auto;
+    transition: all 1s ease;
+    z-index: 10;
+  }
+
+  .navbar-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    z-index: 4;
+    pointer-events: none;
+    /* mask-image: linear-gradient(100deg, transparent 45%, black 80%); */
+    /*border-style: solid;*/
+  }
+
+  .navbar-items {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform: rotate(0deg); /* Controlled dynamically by state */
+    transition: transform 0.3s ease;
+    pointer-events: none; 
+    z-index: 5;
+    overflow: visible;
+
+  }
+  
+  .navbar-item {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    width: 25%;
+    height: 10%;
+    min-width: 150px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #ccc4b2;
+    color: rgb(219, 209, 194);
+    background: linear-gradient(0deg, rgba(143,135,132,1) 0%, rgba(200,188,184,1) 12%, rgba(126,119,117,1) 35%, rgba(117,111,109,1) 65%, rgba(196,175,165,1) 88%, rgba(99,96,94,1) 100%);
+    font-size: 20px;
+    transition: all 0.4s ease;
+    z-index: 6;
+    pointer-events: auto; 
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    box-shadow: -2px 10px 20px 0px rgba(0,0,0,0.69);
+    overflow: hidden;
+    transform-origin: center;
+  }
+
+  .navbar-item.post {
+    width: 15%;
+    height: 5%;
+  }
+
+  .navbar-item.active{
+    color: rgb(151, 180, 187);
+    font-weight: 900;
+    background: linear-gradient(0deg, rgb(59, 74, 75) 0%, rgb(118, 176, 199) 12%, rgb(70, 104, 112) 35%, rgba(70, 104, 112) 65%, rgb(165, 192, 196) 88%, rgba(59, 74, 75) 100%);
+  }
+
+  .navbar-item.edge {
+    opacity: 50%;
+  }
+
+  .navbar-item.invisible {
+    opacity: 0%;
+  }
+
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar-link:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  .scroll-button {
+    position: absolute;
+    right:7%;
+    width: 4%;
+    height: auto;
+    cursor: pointer;
+    z-index: 9;
+    pointer-events: auto; 
+    filter: opacity(0.3);
+  }
+
+  .scroll-button.post {
+    width:10%;
+  }
+
+  .scroll-button:hover {
+    transition: all 0.2s ease;
+    filter: opacity(1);
+  }
+  
+  .scroll-button.top {
+    top:6%;
+  }
+  
+  .scroll-button.bottom {
+    bottom: 6%;
+    rotate: 180deg;
+  }
+
+  @media only screen and (max-width: 920px) {
+    .navbar-home {
+      width:100vw;
+    }
+    .logo-small {
+      width:100%;
+    }
+    .navbar-items.post {
+      display:none
+    }
+    .navbar-item {
+      min-width: 12%;
+      width:35%;
+      height:8%;
+    }
+    .navbar-home {
+      left:-20vw;
+    }
+    .logo-big {
+      width:70vw
+    }
+    .scroll-button {
+      width:10%;
+    }
+  }
