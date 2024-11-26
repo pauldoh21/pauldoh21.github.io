@@ -6,15 +6,14 @@
         "description":
             "Hi, I'm Paul Doherty, a recent Computing Science graduate from Glasgow, Scotland. This website covers a variety of the projects I have worked on over the past years, from software development to entirely creative projects. Scroll through the wheel on the left to get a preview of each project and click into an item to read a detailed description.",
         "content": 
-            "<div style='display:flex; align-items:flex-start; justify-content:space-between;'><div style='width:75%;'><h2>About Me<\/h2><p>My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online\/in person events, creating content, or even developing games. <br><br>I find that game design is one of the most effective ways to utilise my skills. It combines almost every art form you can think of into one massive project. Many of these are forms I enjoy working in. I have been drawing my whole life and now find myself creating concept art for my games before developing these ideas. Creating art for sprites and textures is extremely rewarding when you see these appear in your game. 3D modelling and animation is something I picked up later that was very tough initially, but paid off massively once I got the hang of it. This made me much more comfortable venturing into developing 3D games. Designing levels and gameplay features requires me to think extremely creatively. There are so many amazing ideas out there that when you come up with something that feels truly unique, it is very special.<\/p><br><h2>About This Site<\/h2><p>This site acts as a showcase of some of the projects I have worked on over the past years. Most of these projects involve some sort of software\/computing aspect, but a few others take a more creative focus. I aim for this to exemplify my ability across many different fields and to be a platform for me to show off what I am passionate about and proud of being involved in.<\/p><br><h2>Extra Info<\/h2><p>The logo which appears on the left of the screen was a logo I created in 2017, when I was 15. It was originally intended as a logo for my YouTube channel but has evolved into a symbol I like to use to represent myself. It is a dragon in the shape of an 'S,' standing for my gamertag back in the day.<\/p><\/div><div style='width:20%;'><img src='/profile.jpg' alt='Profile Picture' style='width:100%; padding-right:5%;'><\/div><\/div>"
-
+            "<div style='width:98%; text-align: justify;'><h2>About Me</h2><img src='/profile.jpg' alt='Profile Picture' style='float:right; width:250px; margin:15px;'><p>My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games. <br><br>I find that game design is one of the most effective ways to utilise my skills. It combines almost every art form you can think of into one massive project. Many of these are forms I enjoy working in. I have been drawing my whole life and now find myself creating concept art for my games before developing these ideas. Creating art for sprites and textures is extremely rewarding when you see these appear in your game. 3D modelling and animation is something I picked up later that was very tough initially, but paid off massively once I got the hang of it. This made me much more comfortable venturing into developing 3D games. Designing levels and gameplay features requires me to think extremely creatively. There are so many amazing ideas out there that when you come up with something that feels truly unique, it is very special.</p><br><h2>About This Site</h2><p>This site acts as a showcase of some of the projects I have worked on over the past years. Most of these projects involve some sort of software/computing aspect, but a few others take a more creative focus. I aim for this to exemplify my ability across many different fields and to be a platform for me to show off what I am passionate about and proud of being involved in.</p><br><h2>Extra Info</h2><p>The logo which appears on the left of the screen was a logo I created in 2017, when I was 15. It was originally intended as a logo for my YouTube channel but has evolved into a symbol I like to use to represent myself. It is a dragon in the shape of an 'S,' standing for my gamertag back in the day.</p></div>"
     },
     {
         "id": 2,
         "title": "AR Flatpack Furniture Assembly",
         "cover_image": "arBanner.png",
         "description":
-            "This is the description of the second post.",
+            "The project for my final year dissertation at university. This is a tool to help users assemble flatpack furniture without paper instructions using augmented reality on the Microsoft Hololens 2.",
         "content": 
             "This is the content of the second post."
     },
@@ -23,7 +22,7 @@
         "title": "Charity Football Match",
         "cover_image": "footballBanner.jpg",
         "description":
-            "This is the description of the third post.",
+            "Hosted a charity football match in memory of a close friend. Raised money and donations for a local foodbank. Gathered a live crowd but also developed a program to enhance a live broadcast/replay of the event.",
         "content": 
             "This is the content of the third post."
     },
@@ -32,7 +31,7 @@
         "title": "UI Strategy Game",
         "cover_image": "sunitaBanner.png",
         "description":
-            "This is the description of the fourth post.",
+            "Developed as part of a team project, this user interface focused game simulates an economy and allows you to enact policies and balance your budget to get the best results. Worked with a customer to come to the best final product for their requirements.",
         "content": 
             "This is the content of the fourth post."
     },
