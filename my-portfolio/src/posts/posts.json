@@ -31,7 +31,7 @@
         "title": "UI Strategy Game",
         "cover_image": "sunitaBanner.png",
         "description":
-            "Developed as part of a team project, this user interface focused game simulates an economy and allows you to enact policies and balance your budget to get the best results. Worked with a customer to come to the best final product for their requirements.",
+            "Developed as part of a team project, this user interface focused game simulates an economy and allows you to enact policies and balance your budget to get the best results. Requirements for project were set by a customer.",
         "content": 
             "This is the content of the fourth post."
     },
@@ -40,7 +40,7 @@
         "title": "Racing Game Prototype",
         "cover_image": "racingGameBanner.png",
         "description":
-            "This is the description of the fifth post.",
+            "The beginnings of a dream project. A Unity prototype with custom vehicles and vehicle scripts. Includes a tool for designing roads and tracks using nodes and bezier curves. Plans for a larger game being established through concept art and feature designs.",
         "content": 
             "This is the content of the fifth post."
     },
@@ -49,7 +49,7 @@
         "title": "Game Shows",
         "cover_image": "gameShowsBanner.png",
         "description":
-            "This is the description of the sixth post.",
+            "Recreated a selection of iconic game shows using Python and OBS. Broadcasted them with different guests every time to a live audience online.",
         "content": 
             "This is the content of the sixth post."
     },
@@ -58,7 +58,7 @@
         "title": "Sub Crawl",
         "cover_image": "subCrawlBanner.png",
         "description":
-            "This is the description of the seventh post.",
+            "A small party game that is currently a work in progress. Involves players travelling along a board and playing pub-themed mini games along the way. In development in Unity with much of the rules, 3D models and artwork underway.",
         "content": 
             "This is the content of the seventh post."
     },
@@ -67,7 +67,7 @@
         "title": "RAaEzo Man",
         "cover_image": "raaezomanBanner.png",
         "description":
-            "This is the description of the eigth post.",
+            "A game created during my time at high school. A 2D fighting game with completely custom artwork and music. Created in Game Maker, this was the first completely unique project I had developed alone.",
         "content": 
             "This is the content of the eigth post."
     },
@@ -85,7 +85,7 @@
         "title": "This Portfolio",
         "cover_image": "NewBanner.png",
         "description":
-            "This is the description of the ninth post.",
+            "This portfolio was developed using React. While it wasn't my first attempt at web development, it was my first time using React and attempting such a unique design for a website. The website is inspired by 2000s video game and console user interfaces.",
         "content": 
             "This is the content of the ninth post."
     }
