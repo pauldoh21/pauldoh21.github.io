@@ -162,6 +162,11 @@ body {
   padding-left: 2vw;
 }
 
+.post-container a {
+  font-size: 1.2rem;
+  color:#f1e4d2;
+}
+
 #main {
   background: linear-gradient(90deg, rgba(84,51,39,0) 0%, rgba(19, 9, 2, 0.856) 40%, rgb(19, 9, 2) 80%);
   padding:0%;

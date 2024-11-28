@@ -14,19 +14,30 @@ function Post({ posts }) {
       switch (block.type) {
         case 'h2':
           return <h2 key={index}>{block.content}</h2>;
+
         case 'p':
-          // Split content on \n and map each line
-          const lines = block.content.split('\n');
           return (
             <p key={index}>
-              {lines.map((line, i) => (
-                <React.Fragment key={i}>
-                  {line}
-                  {i < lines.length - 1 && <br />}
-                </React.Fragment>
-              ))}
+              {block.content.map((item, i) => {
+                if (item.type === 'text') {
+                  return item.value.split('\n').map((line, j) => (
+                    <React.Fragment key={`${i}-${j}`}>
+                      {line}
+                      {j < item.value.split('\n').length - 1 && <br />}
+                    </React.Fragment>
+                  ));
+                } else if (item.type === 'link') {
+                  return (
+                    <a key={i} href={item.href}>
+                      {item.value}
+                    </a>
+                  );
+                }
+                return null;
+              })}
             </p>
-          );
+          );          
+
         case 'image':
           return (
             <img
@@ -36,16 +47,18 @@ function Post({ posts }) {
               style={block.style || {}}
             />
           );
-          case 'Gallery':
-            return (
-              <div style={block.style || {}}>
-                <Gallery>
-                  {block.images.map((image, i) => (
-                    <img key={i} src={image.src} alt={image.alt} />
-                  ))}
-                </Gallery>
-              </div>
-            );
+
+        case 'Gallery':
+          return (
+            <div style={block.style || {}}>
+              <Gallery>
+                {block.images.map((image, i) => (
+                  <img key={i} src={image.src} alt={image.alt} />
+                ))}
+              </Gallery>
+            </div>
+          );
+
         default:
           return null;
       }

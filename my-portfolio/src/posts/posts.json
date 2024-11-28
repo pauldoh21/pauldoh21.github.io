@@ -17,11 +17,15 @@
             },
             {
                 "type": "p",
-                "content": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games. \n\n"
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
             },
             {
                 "type": "p",
-                "content": "I find that game design is one of the most effective ways to utilise my skills. It combines almost every art form you can think of into one massive project. Many of these are forms I enjoy working in. I have been drawing my whole life and now find myself creating concept art for my games before developing these ideas. Creating art for sprites and textures is extremely rewarding when you see these appear in your game. 3D modelling and animation is something I picked up later that was very tough initially, but paid off massively once I got the hang of it. This made me much more comfortable venturing into developing 3D games. Designing levels and gameplay features requires me to think extremely creatively. There are so many amazing ideas out there that when you come up with something that feels truly unique, it is very special.\n\n"
+                "content": [
+                    { "type": "text", "value": "I find that game design is one of the most effective ways to utilise my skills. It combines almost every art form you can think of into one massive project. Many of these are forms I enjoy working in. I have been drawing my whole life and now find myself creating concept art for my games before developing these ideas. Creating art for sprites and textures is extremely rewarding when you see these appear in your game. 3D modelling and animation is something I picked up later that was very tough initially, but paid off massively once I got the hang of it. This made me much more comfortable venturing into developing 3D games. Designing levels and gameplay features requires me to think extremely creatively. There are so many amazing ideas out there that when you come up with something that feels truly unique, it is very special.\n\n" }
+                ]
             },
             {
                 "type": "h2",
@@ -29,7 +33,9 @@
             },
             {
                 "type": "p",
-                "content": "This site acts as a showcase of some of the projects I have worked on over the past years. Most of these projects involve some sort of software/computing aspect, but a few others take a more creative focus. I aim for this to exemplify my ability across many different fields and to be a platform for me to show off what I am passionate about and proud of being involved in. \n\n"
+                "content": [
+                    { "type": "text", "value": "This site acts as a showcase of some of the projects I have worked on over the past years. Most of these projects involve some sort of software/computing aspect, but a few others take a more creative focus. I aim for this to exemplify my ability across many different fields and to be a platform for me to show off what I am passionate about and proud of being involved in.\n\n" }
+                ]
             },
             {
                 "type": "h2",
@@ -37,137 +43,292 @@
             },
             {
                 "type": "p",
-                "content": "The logo which appears on the left of the screen was a logo I created in 2017, when I was 15. It was originally intended as a logo for my YouTube channel but has evolved into a symbol I like to use to represent myself. It is a dragon in the shape of an 'S,' standing for my gamertag back in the day."
+                "content": [
+                    { "type": "text", "value": "The logo which appears on the left of the screen was a logo I created in 2017, when I was 15. It was originally intended as a logo for my YouTube channel but has evolved into a symbol I like to use to represent myself. It is a dragon in the shape of an 'S,' standing for my gamertag back in the day.\n\n" }
+                ]
             }
-            ]
-        }
-        ,
+        ]
+    },
     {
         "id": 2,
         "title": "AR Flatpack Furniture Assembly",
         "cover_image": "arBanner.png",
-        "description":
-            "The project for my final year dissertation at university. This is a tool to help users assemble flatpack furniture without paper instructions using augmented reality on the Microsoft Hololens 2.",
-        "content": 
-            "This is the content of the second post."
+        "description": "The project for my final year dissertation at university. This is a tool to help users assemble flatpack furniture without paper instructions using augmented reality on the Microsoft Hololens 2.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 3,
         "title": "Charity Football Match",
         "cover_image": "footballBanner.jpg",
-        "description":
-            "Hosted a charity football match in memory of a close friend. Raised money and donations for a local foodbank. Gathered a live crowd but also developed a program to enhance a live broadcast/replay of the event.",
-        "content": 
-            "This is the content of the third post."
+        "description": "Hosted a charity football match in memory of a close friend. Raised money and donations for a local foodbank. Gathered a live crowd but also developed a program to enhance a live broadcast/replay of the event.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 4,
         "title": "UI Strategy Game",
         "cover_image": "sunitaBanner.png",
-        "description":
-            "Developed as part of a team project, this user interface focused game simulates an economy and allows you to enact policies and balance your budget to get the best results. Requirements for project were set by a customer.",
-        "content": 
-            "This is the content of the fourth post."
+        "description": "Developed as part of a team project, this user interface focused game simulates an economy and allows you to enact policies and balance your budget to get the best results. Requirements for project were set by a customer.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 5,
         "title": "Racing Game Prototype",
         "cover_image": "racingGameBanner.png",
-        "description":
-            "The beginnings of a dream project. A Unity prototype with custom vehicles and vehicle scripts. Includes a tool for designing roads and tracks using nodes and bezier curves. Plans for a larger game being established through concept art and feature designs.",
-        "content": 
-            "This is the content of the fifth post."
+        "description": "The beginnings of a dream project. A Unity prototype with custom vehicles and vehicle scripts. Includes a tool for designing roads and tracks using nodes and bezier curves. Plans for a larger game being established through concept art and feature designs.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 6,
         "title": "Game Shows",
         "cover_image": "gameShowsBanner.png",
-        "description":
-            "Recreated a selection of iconic game shows using Python and OBS. Broadcasted them with different guests every time to a live audience online.",
-        "content": 
-            "This is the content of the sixth post."
+        "description": "Recreated a selection of iconic game shows using Python and OBS. Broadcasted them with different guests every time to a live audience online.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 7,
         "title": "Sub Crawl",
         "cover_image": "subCrawlBanner.png",
-        "description":
-            "A small party game that is currently a work in progress. Involves players travelling along a board and playing pub-themed mini games along the way. In development in Unity with much of the rules, 3D models and artwork underway.",
-        "content": 
-            "This is the content of the seventh post."
+        "description": "A small party game that is currently a work in progress. Involves players travelling along a board and playing pub-themed mini games along the way. In development in Unity with much of the rules, 3D models and artwork underway.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 8,
         "title": "RAaEzo Man",
         "cover_image": "raaezomanBanner.png",
-        "description":
-            "A game created during my time at high school. A 2D fighting game with completely custom artwork and music. Created in Game Maker, this was the first completely unique project I had developed alone.",
-        "content": 
-            "This is the content of the eigth post."
+        "description": "A game created during my time at high school. A 2D fighting game with completely custom artwork and music. Created in Game Maker, this was the first completely unique project I had developed alone.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 9,
         "title": "Wrestling Online Event",
         "cover_image": "wctBanner.png",
-        "description":
-            "A giant tournament based in WWE 2K22 with 64 custom-made characters. Created artwork and 3D animations. Developed program to help with broadcasting the event.",
-        "content": 
-            "This is the content of the ninth post."
+        "description": "A giant tournament based in WWE 2K22 with 64 custom-made characters. Created artwork and 3D animations. Developed program to help with broadcasting the event.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 10,
         "title": "This Portfolio",
         "cover_image": "portfolioBanner.png",
-        "description":
-            "This portfolio was developed using React. While it wasn't my first attempt at web development, it was my first time using React and attempting such a unique design for a website. The website is inspired by 2000s video game and console user interfaces.",
-        "content": 
-            "This is the content of the tenth post."
+        "description": "This portfolio was developed using React. While it wasn't my first attempt at web development, it was my first time using React and attempting such a unique design for a website. The website is inspired by 2000s video game and console user interfaces.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 11,
         "title": "Bench Bot",
         "cover_image": "NewBanner.png",
-        "description":
-            "A showcase of some of my artwork and creative projects.",
-        "content": 
-            "This is the content of the eleventh post."
+        "description": "A showcase of some of my artwork and creative projects.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                ]
+            }
+        ]
     },
     {
         "id": 12,
         "title": "Creative Work",
         "cover_image": "NewBanner.png",
-        "description":
-            "A showcase of some of my artwork and creative projects.",
-        "content": 
-        [
+        "description": "A showcase of some of my artwork and creative projects.",
+        "content": [
             {
                 "type": "h2",
-                "content": "Minecraft City Showcase"
-                },
-                {
+                "content": "Minecraft City"
+            },
+            {
                 "type": "p",
-                "content": "This is my Minecraft world which I started in 2015. This started when I developed an interest in skyscrapers as a young teen which has eventually developed into a love of city planning and world building. I have worked on this for the years since, eventually coming to build 4 unique cities. The world is filled with details, lore, and easter eggs.\n\n"
-                },
-                {
+                "content": [
+                    { "type": "text", "value": "This is my Minecraft world which I started in 2015. This began when I developed an interest in skyscrapers as a young teen which has eventually developed into a love of city planning and world building. I have worked on this over the years since, eventually coming to build 4 unique cities. The world is filled with details, lore, and easter eggs.\n\n" }
+                ]
+            },
+            {
                 "type": "Gallery",
-                "style": { "width": "75%", "height":"auto", "margin-left":"auto", "margin-right":"auto" },
+                "style": { "width": "75%", "height": "auto", "margin-left": "auto", "margin-right": "auto", "margin-bottom": "20px" },
                 "images": [
-                { "src": "/CreativePostPics/minecraftPic0.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic1.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic2.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic3.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic4.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic5.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic6.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic7.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic8.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic9.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic10.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic11.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic12.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic13.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic14.png", "alt": "Slide 1" },
-                { "src": "/CreativePostPics/minecraftPic15.png", "alt": "Slide 1" }
+                    { "src": "/CreativePostPics/minecraftPic0.png", "alt": "Slide 1" },
+                    { "src": "/CreativePostPics/minecraftPic1.png", "alt": "Slide 2" },
+                    { "src": "/CreativePostPics/minecraftPic2.png", "alt": "Slide 3" },
+                    { "src": "/CreativePostPics/minecraftPic3.png", "alt": "Slide 4" },
+                    { "src": "/CreativePostPics/minecraftPic4.png", "alt": "Slide 5" },
+                    { "src": "/CreativePostPics/minecraftPic5.png", "alt": "Slide 6" },
+                    { "src": "/CreativePostPics/minecraftPic6.png", "alt": "Slide 7" },
+                    { "src": "/CreativePostPics/minecraftPic7.png", "alt": "Slide 8" },
+                    { "src": "/CreativePostPics/minecraftPic8.png", "alt": "Slide 9" },
+                    { "src": "/CreativePostPics/minecraftPic9.png", "alt": "Slide 10" },
+                    { "src": "/CreativePostPics/minecraftPic10.png", "alt": "Slide 11" },
+                    { "src": "/CreativePostPics/minecraftPic11.png", "alt": "Slide 12" },
+                    { "src": "/CreativePostPics/minecraftPic12.png", "alt": "Slide 13" },
+                    { "src": "/CreativePostPics/minecraftPic13.png", "alt": "Slide 14" },
+                    { "src": "/CreativePostPics/minecraftPic14.png", "alt": "Slide 15" },
+                    { "src": "/CreativePostPics/minecraftPic15.png", "alt": "Slide 16" }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Planet Coaster Island"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "This is a very new project but one that has been on my mind for a long time. It is a tropical pirate haven named Chillis Island, which is also the location in " },
+                    { "type": "link", "href": "/posts/8", "value": "RAaEzo Man Battle." },
+                    {"type": "text", "value": " Planet Coaster 2 is the perfect tool to build this world in with it's 3D building and terraforming capabilities.\n\n"}
+                ]
+            },
+            {
+                "type": "Gallery",
+                "style": { "width": "75%", "height": "auto", "margin-left": "auto", "margin-right": "auto", "margin-bottom": "20px" },
+                "images": [
+                    { "src": "/CreativePostPics/coasterPic0.jpg", "alt": "Slide 1" },
+                    { "src": "/CreativePostPics/coasterPic1.jpg", "alt": "Slide 2" },
+                    { "src": "/CreativePostPics/coasterPic2.jpg", "alt": "Slide 3" },
+                    { "src": "/CreativePostPics/coasterPic3.jpg", "alt": "Slide 4" },
+                    { "src": "/CreativePostPics/coasterPic4.jpg", "alt": "Slide 5" },
+                    { "src": "/CreativePostPics/coasterPic5.jpg", "alt": "Slide 6" },
+                    { "src": "/CreativePostPics/coasterPic6.jpg", "alt": "Slide 7" },
+                    { "src": "/CreativePostPics/coasterPic7.jpg", "alt": "Slide 8" },
+                    { "src": "/CreativePostPics/coasterPic8.jpg", "alt": "Slide 9" },
+                    { "src": "/CreativePostPics/coasterPic9.jpg", "alt": "Slide 10" }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Cities Skylines"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "A range of my creations in Cities Skylines 2. I enjoy creating custom maps that others can use themselves. My best custom map was a scaled down version of Glasgow and the West coast of Scotland created from scratch. This map received over 1000 downloads on " },
+                    { "type": "link", "href": "https://mods.paradoxplaza.com/mods/77374/Any", "value": "Paradox Mods."},
+                    { "type": "text", "value": " I was incredibly proud of the racetrack and football stadium I built on one of my cities. These venues saw the praise of a prominent and very skilled member of the Cities Skylines community.\n\n" }
+                ]
+            },
+            {
+                "type": "Gallery",
+                "style": { "width": "75%", "height": "auto", "margin-left": "auto", "margin-right": "auto", "margin-bottom": "20px" },
+                "images": [
+                    { "src": "/CreativePostPics/citiesPic0.png", "alt": "Slide 1" },
+                    { "src": "/CreativePostPics/citiesPic1.png", "alt": "Slide 2" },
+                    { "src": "/CreativePostPics/citiesPic2.png", "alt": "Slide 3" },
+                    { "src": "/CreativePostPics/citiesPic3.png", "alt": "Slide 4" },
+                    { "src": "/CreativePostPics/citiesPic4.png", "alt": "Slide 5" },
+                    { "src": "/CreativePostPics/citiesPic5.png", "alt": "Slide 6" },
+                    { "src": "/CreativePostPics/citiesPic6.png", "alt": "Slide 7" },
+                    { "src": "/CreativePostPics/citiesPic7.png", "alt": "Slide 8" },
+                    { "src": "/CreativePostPics/citiesPic8.png", "alt": "Slide 9" },
+                    { "src": "/CreativePostPics/citiesPic9.png", "alt": "Slide 10" },
+                    { "src": "/CreativePostPics/citiesPic10.png", "alt": "Slide 11" },
+                    { "src": "/CreativePostPics/citiesPic11.png", "alt": "Slide 12" },
+                    { "src": "/CreativePostPics/citiesPic12.png", "alt": "Slide 13" },
+                    { "src": "/CreativePostPics/citiesPic13.png", "alt": "Slide 14" },
+                    { "src": "/CreativePostPics/citiesPic14.png", "alt": "Slide 15" },
+                    { "src": "/CreativePostPics/citiesPic15.png", "alt": "Slide 16" },
+                    { "src": "/CreativePostPics/citiesPic16.png", "alt": "Slide 17" },
+                    { "src": "/CreativePostPics/citiesPic17.png", "alt": "Slide 18" }
                 ]
             }
         ]
