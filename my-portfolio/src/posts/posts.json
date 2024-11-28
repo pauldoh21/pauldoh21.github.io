@@ -3,11 +3,45 @@
         "id": 1,
         "title": "Intro",
         "cover_image": "introBanner.png",
-        "description":
-            "Hi, I'm Paul Doherty, a recent Computing Science graduate from Glasgow, Scotland. This website covers a variety of the projects I have worked on over the past years, from software development to entirely creative projects. Scroll through the wheel on the left to get a preview of each project and click into an item to read a detailed description.",
-        "content": 
-            "<div style='width:98%; text-align: justify;'><h2>About Me</h2><img src='/profile.jpg' alt='Profile Picture' style='float:right; width:250px; margin:15px;'><p>My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games. <br><br>I find that game design is one of the most effective ways to utilise my skills. It combines almost every art form you can think of into one massive project. Many of these are forms I enjoy working in. I have been drawing my whole life and now find myself creating concept art for my games before developing these ideas. Creating art for sprites and textures is extremely rewarding when you see these appear in your game. 3D modelling and animation is something I picked up later that was very tough initially, but paid off massively once I got the hang of it. This made me much more comfortable venturing into developing 3D games. Designing levels and gameplay features requires me to think extremely creatively. There are so many amazing ideas out there that when you come up with something that feels truly unique, it is very special.</p><br><h2>About This Site</h2><p>This site acts as a showcase of some of the projects I have worked on over the past years. Most of these projects involve some sort of software/computing aspect, but a few others take a more creative focus. I aim for this to exemplify my ability across many different fields and to be a platform for me to show off what I am passionate about and proud of being involved in.</p><br><h2>Extra Info</h2><p>The logo which appears on the left of the screen was a logo I created in 2017, when I was 15. It was originally intended as a logo for my YouTube channel but has evolved into a symbol I like to use to represent myself. It is a dragon in the shape of an 'S,' standing for my gamertag back in the day.</p></div>"
-    },
+        "description": "Hi, I'm Paul Doherty, a recent Computing Science graduate from Glasgow, Scotland. This website covers a variety of the projects I have worked on over the past years, from software development to entirely creative projects. Scroll through the wheel on the left to get a preview of each project and click into an item to read a detailed description.",
+        "content": [
+            {
+                "type": "h2",
+                "content": "About Me"
+            },
+            {
+                "type": "image",
+                "src": "/profile.jpg",
+                "alt": "Profile Picture",
+                "style": { "float": "right", "width": "250px", "margin": "15px" }
+            },
+            {
+                "type": "p",
+                "content": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games. \n\n"
+            },
+            {
+                "type": "p",
+                "content": "I find that game design is one of the most effective ways to utilise my skills. It combines almost every art form you can think of into one massive project. Many of these are forms I enjoy working in. I have been drawing my whole life and now find myself creating concept art for my games before developing these ideas. Creating art for sprites and textures is extremely rewarding when you see these appear in your game. 3D modelling and animation is something I picked up later that was very tough initially, but paid off massively once I got the hang of it. This made me much more comfortable venturing into developing 3D games. Designing levels and gameplay features requires me to think extremely creatively. There are so many amazing ideas out there that when you come up with something that feels truly unique, it is very special.\n\n"
+            },
+            {
+                "type": "h2",
+                "content": "About This Site"
+            },
+            {
+                "type": "p",
+                "content": "This site acts as a showcase of some of the projects I have worked on over the past years. Most of these projects involve some sort of software/computing aspect, but a few others take a more creative focus. I aim for this to exemplify my ability across many different fields and to be a platform for me to show off what I am passionate about and proud of being involved in. \n\n"
+            },
+            {
+                "type": "h2",
+                "content": "Extra Info"
+            },
+            {
+                "type": "p",
+                "content": "The logo which appears on the left of the screen was a logo I created in 2017, when I was 15. It was originally intended as a logo for my YouTube channel but has evolved into a symbol I like to use to represent myself. It is a dragon in the shape of an 'S,' standing for my gamertag back in the day."
+            }
+            ]
+        }
+        ,
     {
         "id": 2,
         "title": "AR Flatpack Furniture Assembly",
@@ -76,18 +110,66 @@
         "title": "Wrestling Online Event",
         "cover_image": "wctBanner.png",
         "description":
-            "This is the description of the ninth post.",
+            "A giant tournament based in WWE 2K22 with 64 custom-made characters. Created artwork and 3D animations. Developed program to help with broadcasting the event.",
         "content": 
             "This is the content of the ninth post."
     },
     {
         "id": 10,
         "title": "This Portfolio",
-        "cover_image": "NewBanner.png",
+        "cover_image": "portfolioBanner.png",
         "description":
             "This portfolio was developed using React. While it wasn't my first attempt at web development, it was my first time using React and attempting such a unique design for a website. The website is inspired by 2000s video game and console user interfaces.",
         "content": 
-            "This is the content of the ninth post."
+            "This is the content of the tenth post."
+    },
+    {
+        "id": 11,
+        "title": "Bench Bot",
+        "cover_image": "NewBanner.png",
+        "description":
+            "A showcase of some of my artwork and creative projects.",
+        "content": 
+            "This is the content of the eleventh post."
+    },
+    {
+        "id": 12,
+        "title": "Creative Work",
+        "cover_image": "NewBanner.png",
+        "description":
+            "A showcase of some of my artwork and creative projects.",
+        "content": 
+        [
+            {
+                "type": "h2",
+                "content": "Minecraft City Showcase"
+                },
+                {
+                "type": "p",
+                "content": "This is my Minecraft world which I started in 2015. This started when I developed an interest in skyscrapers as a young teen which has eventually developed into a love of city planning and world building. I have worked on this for the years since, eventually coming to build 4 unique cities. The world is filled with details, lore, and easter eggs.\n\n"
+                },
+                {
+                "type": "Gallery",
+                "style": { "width": "75%", "height":"auto", "margin-left":"auto", "margin-right":"auto" },
+                "images": [
+                { "src": "/CreativePostPics/minecraftPic0.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic1.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic2.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic3.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic4.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic5.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic6.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic7.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic8.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic9.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic10.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic11.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic12.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic13.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic14.png", "alt": "Slide 1" },
+                { "src": "/CreativePostPics/minecraftPic15.png", "alt": "Slide 1" }
+                ]
+            }
+        ]
     }
-  ]
-  
+]
