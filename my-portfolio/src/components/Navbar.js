@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import posts from '../posts/posts.json';
-import { ActivePostContext } from '../context/ActivePostContext'; // Adjust path as needed
+import { ActivePostContext } from '../context/ActivePostContext';
 
 function Navbar({ type }) {
   const NAVBAR_VARIANTS = {
@@ -36,6 +36,21 @@ function Navbar({ type }) {
   const [circleRadius, setCircleRadius] = useState(type === 2 ? 25 :10); // Default radius
   
   const angleStep = 360 / posts.length;
+
+  const { activePost } = useContext(ActivePostContext);
+
+  useEffect(() => {
+    if (activePost) {
+      const newPage = posts.findIndex((post) => post.id === activePost.id) + 1;
+      setActivePage(newPage);
+  
+      const delta = (newPage - activePage + posts.length) % posts.length;
+      const shortestRotation = delta <= posts.length / 2 ? delta : delta - posts.length;
+  
+      setRotation((prev) => prev - shortestRotation * angleStep);
+    }
+  }, [activePost]); // Dependency on activePost ensures this runs when it changes
+  
 
   // Update circle radius based on window width
   useEffect(() => {

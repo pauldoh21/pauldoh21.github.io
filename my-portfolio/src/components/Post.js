@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
+import { ActivePostContext } from '../context/ActivePostContext';  // Import the context
 import Gallery from './Gallery';
 
 function Post({ posts }) {
   const { id } = useParams();
   const post = posts.find((p) => p.id === parseInt(id));
+
+  // Access the context to update the active post
+  const { setActivePost } = useContext(ActivePostContext);
+
+  // Update the active post when the component mounts or the ID changes
+  useEffect(() => {
+    if (post) {
+      setActivePost(post);
+    }
+  }, [post, setActivePost]); // Dependencies ensure this runs when post changes
 
   if (!post) return <p>Post not found</p>;
 
@@ -28,7 +39,12 @@ function Post({ posts }) {
                   ));
                 } else if (item.type === 'link') {
                   return (
-                    <a key={i} href={item.href}>
+                    <a 
+                      key={i} 
+                      href={item.href} 
+                      target={item.newTab ? "_blank" : undefined} 
+                      rel={item.newTab ? "noopener noreferrer" : undefined}
+                    >
                       {item.value}
                     </a>
                   );
@@ -36,7 +52,7 @@ function Post({ posts }) {
                 return null;
               })}
             </p>
-          );          
+          );
 
         case 'image':
           return (
@@ -64,7 +80,6 @@ function Post({ posts }) {
       }
     });
   };
-  
 
   return (
     <div id="main" className="post-container">

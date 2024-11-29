@@ -127,13 +127,15 @@
     transform-origin: center;
     width: 25%;
     height: 10%;
-    min-width: 150px;
+    min-width: 190px;
+
     align-items: center;
     text-align: center;
     justify-content: center;
     background-color: #ccc4b2;
     color: rgb(219, 209, 194);
     background: linear-gradient(0deg, rgba(143,135,132,1) 0%, rgba(200,188,184,1) 12%, rgba(126,119,117,1) 35%, rgba(117,111,109,1) 65%, rgba(196,175,165,1) 88%, rgba(99,96,94,1) 100%);
+    font-family: "Electrolize", sans-serif;
     font-size: 20px;
     transition: all 0.4s ease;
     z-index: 6;

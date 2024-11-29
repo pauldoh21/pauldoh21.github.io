@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Electrolize&family=Teko:wght@300..700&display=swap');
 
 /* Basic Reset */
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Electrolize", sans-serif;
+  font-family: "Blinker", sans-serif;
   font-weight: 400;
   font-style: normal;
   color:#f1e4d2;
@@ -63,7 +63,6 @@ body {
   margin-top: 30vh;
   text-align: left;
   font-size: 1.5em;
-  font-family: "Electrolize", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -159,7 +158,9 @@ body {
 
 .post-container p {
   font-size: 1.2rem;
-  padding-left: 2vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-align: justify;
 }
 
 .post-container a {
@@ -168,7 +169,7 @@ body {
 }
 
 #main {
-  background: linear-gradient(90deg, rgba(84,51,39,0) 0%, rgba(19, 9, 2, 0.856) 40%, rgb(19, 9, 2) 80%);
+  background: linear-gradient(90deg, rgba(73, 38, 26, 0) 0%, rgba(53, 25, 14, 0.466) 5%, rgba(26, 13, 4, 0.856) 40%, rgb(19, 9, 2) 80%);
   padding:0%;
   animation: fade 1s linear;
   z-index: 1;
