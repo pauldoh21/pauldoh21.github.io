@@ -163,6 +163,14 @@ body {
   text-align: justify;
 }
 
+.post-container ul {
+  font-size: 1.2rem;
+  padding-left: 4vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  text-align: justify;
+}
+
 .post-container a {
   font-size: 1.2rem;
   color:#f1e4d2;

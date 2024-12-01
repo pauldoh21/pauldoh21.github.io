@@ -112,7 +112,139 @@
             {
                 "type": "p",
                 "content": [
-                    { "type": "text", "value": "In early 2024 I lost a very close friend. In order to pay tribute to him, my friends and I set up a charity football match in his name. \n\n" }
+                    { "type": "text", "value": "In early 2024 I lost a very close friend. In order to pay tribute to him, my friends and I set up a charity elevens football match in his name. Together we gathered a crowd, raised £4,910, and collected food donations for the local foodbank. \n\n" }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Planning the Event"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "There was a group of four of us that were involved with planning this event. Plans started small but quickly expanded over time as we realised we were capable of more. We had to organise a range of factors including but not limited to the following:" }
+                ]
+            },
+            {
+                "type": "ul", 
+                "content": ["The venue", "At least 24 players", "A method to raise funds", "Kits"] 
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "\nAs a group we split all of the issues between us and came together every week to discuss progress and help each other out. We created posters and advertised everywhere we could. We reached out to members of the local community which led to us getting a " },
+                    { "type": "link", "href":"https://www.barrheadnews.com/news/24614960.match-honour-jonathan-morrin-held-neilston/", "value":"story in the news", "newTab":true },
+                    { "type": "text", "value": ", and helped us get a fantastic venue.\n\n" }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Broadcasting the Event"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "For those that couldn't make the day, we decided to record the event. I wanted the footage to appear as close to a regular football broadcast as possible. To do this I developed a program which could track the match and display match info on the recording. This program was built with Python and connected with OBS to put graphics on the screen. \n\nIt was a priority of mine to keep the application from being too specific to this one game. This meant that I wanted to be able to set up and broadcast any possible football match. To achieve this I set up a system of 'Games', 'Teams' and 'Players'. This allows the user to set up whatever football matches possible by creating custom teams with custom players. A saving system was set up for each of these objects which means that users could even save a match in its exact state midway through.\n\n" }
+                ]
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "An editor was developed to allow a user-friendly way to customise teams and players. All information of a team could be edited and the players on a team can be managed.\n\n" }
+                ]
+            },
+            {
+                "type":"image",
+                "src":"/CharityPostPics/editor.png",
+                "alt":"The team editor",
+                "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-bottom":"20px", "width": "40%", "padding-left":"60px" }
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "The editor also came with a formation manager which could be used to set up any possible formation with the players off the bench. Positions could be swapped by dragging and dropping players and the overall formation could be changed by typing a valid formation in the text box. The formation was used at the start of a match broadcast to present the starting eleven.\n\n" }
+                ]
+            },
+            {
+                "type":"div",
+                "style": { "display": "flex", "padding-left":"2vw", "padding-right":"2vw", "height":"40vh", "justify-content":"center", "align-items":"center" },
+                "content": [
+                    {
+                        "type":"image",
+                        "src":"/CharityPostPics/formation.png",
+                        "alt":"The formation editor",
+                        "style":{ "float":"left", "width":"auto", "height":"100%", "padding":"10px" }
+                    },
+                    {
+                        "type":"image",
+                        "src":"/CharityPostPics/formation2.png",
+                        "alt":"The formation as shown in broadcast",
+                        "style":{ "float":"left", "width":"auto", "height":"75%", "padding":"10px" }
+                    }
+                ]
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "Once a match was set up, the software connected with OBS using web sockets. A user interface with match controls would then appear. This panel allows the operator to start and stop each half, add goals, cards, substitutions, replays and more. It was a priority that the operator had all the required information present in a clear way while also having as much control as possible to ensure it could be operated live with minimal errors. In the case that errors were made, delete buttons were added. The interface also included replay controls. At certain points such as goals being scored, the footage will be split and the program will automatically go to the end of that clip to show a replay of what happened.\n\n" }
+                ]
+            },
+            {
+                "type":"image",
+                "src":"/CharityPostPics/ui.png",
+                "alt":"The match interface",
+                "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-bottom":"20px", "width": "50%", "padding-left":"60px" }
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "The match footage had a display over it to communicate facts of the game. It could show substitutions, cards and goals. All of the display features had animations tied to them which were all manually implemented by moving objects or updating a mask iteratively within a loop. A penalty shootout feature was even implemented for the case of a draw, but this feature was never required.\n\n" }
+                ]
+            },
+            {
+                "type":"div",
+                "style": { "display": "flex", "padding-left":"2vw", "padding-right":"2vw", "height":"23vh", "justify-content":"center", "align-items":"center" },
+                "content": [
+                    {
+                        "type":"image",
+                        "src":"/CharityPostPics/ingame1.png",
+                        "alt":"The display at the start of a half",
+                        "style":{ "float":"left", "width":"auto", "height":"100%", "padding":"5px" }
+                    },
+                    {
+                        "type":"image",
+                        "src":"/CharityPostPics/ingame2.png",
+                        "alt":"The display druing regular time",
+                        "style":{ "float":"left", "width":"auto", "height":"100%", "padding":"5px" }
+                    },
+                    {
+                        "type":"image",
+                        "src":"/CharityPostPics/ingame3.png",
+                        "alt":"The substitution popup",
+                        "style":{ "float":"left", "width":"auto", "height":"100%", "padding":"5px" }
+                    }
+                ]
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "\nThis application was fully capable of broadcasting the match live online. Unfortunately I did not have access to the required tech to connect multiple cameras to one device  and I could not guarantee a reliable internet connection. This meant that the footage was recorded with one camera angle and uploaded later. It is a goal of mine to have the match go out live in the likely event that we have another charity match next year.\n\n" }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Badges & Kits"
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "I personally designed the badges and kits for both teams. The teams were based on two of our friend's favourite places, Malone's Irish Bar in Glasgow and the home ground of Arthurlie FC, Dunterlie. \n\n AC Malones:\n\n" }
+                ]
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "Dunterlie Dynamos:\n\n" }
                 ]
             }
         ]
