@@ -24,11 +24,11 @@ const renderContent = (contentArray) => {
   return contentArray.map((block, index) => {
     switch (block.type) {
       case 'h2':
-        return <h2 key={index}>{block.content}</h2>;
+        return <h2 key={index} className={block.className || {}}>{block.content}</h2>;
 
       case 'p':
         return (
-          <p key={index}>
+          <p key={index} className={block.className || {}}>
             {block.content.map((item, i) => {
               if (item.type === 'text') {
                 return item.value.split('\n').map((line, j) => (
@@ -44,6 +44,7 @@ const renderContent = (contentArray) => {
                     href={item.href} 
                     target={item.newTab ? "_blank" : undefined} 
                     rel={item.newTab ? "noopener noreferrer" : undefined}
+                    className={block.className || {}}
                   >
                     {item.value}
                   </a>
@@ -58,7 +59,7 @@ const renderContent = (contentArray) => {
         return (
           <ul key={index}>
             {block.content.map((item, i) => (
-              <li key={i}>{item}</li>
+              <li key={i} className={block.className || {}}>{item}</li>
             ))}
           </ul>
         );
@@ -70,6 +71,7 @@ const renderContent = (contentArray) => {
             src={block.src}
             alt={block.alt}
             style={block.style || {}}
+            className={block.className || {}}
           />
         );
 
@@ -78,7 +80,7 @@ const renderContent = (contentArray) => {
           <div key={index} style={block.style || {}}>
             <Gallery>
               {block.images.map((image, i) => (
-                <img key={i} src={image.src} alt={image.alt} />
+                <img key={i} src={image.src} alt={image.alt} className={block.className || {}}/>
               ))}
             </Gallery>
           </div>
@@ -87,8 +89,8 @@ const renderContent = (contentArray) => {
       // New 'div' case to handle nested blocks
       case 'div':
         return (
-          <div key={index} style={block.style || {}}>
-            {renderContent(block.content)}  {/* Recursive call */}
+          <div key={index} style={block.style || {}} className={block.className || {}}>
+            {renderContent(block.content)}
           </div>
         );
 
@@ -101,8 +103,14 @@ const renderContent = (contentArray) => {
 
   return (
     <div id="main" className="post-container">
-      <h1>{post.title}</h1>
-      {renderContent(post.content)}
+      <div className='post-box'>
+        <h1>{post.title}</h1>
+        {post.is_ready ? (
+          renderContent(post.content)
+        ) : (
+          <p>This post is currently a work in progress.</p>
+        )}
+      </div>
     </div>
   );
 }

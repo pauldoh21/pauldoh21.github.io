@@ -7,12 +7,8 @@ function Home() {
 
   useEffect(() => {
     const fitText = () => {
-      // Get the .home-container element
       const homeContainer = document.querySelector('.home-container');
-      
-      // Check if the element exists and is not set to display:none
       if (homeContainer && window.getComputedStyle(homeContainer).display === 'none') {
-        // If display is 'none', skip further execution
         return;
       }
   
@@ -60,6 +56,7 @@ function Home() {
         ) : (
           <p>Select a post to view details.</p>
         )}
+        
       </div>
 
   );

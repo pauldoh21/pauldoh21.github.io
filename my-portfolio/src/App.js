@@ -8,6 +8,7 @@ import Background from './components/Background';
 import './App.css'; // Ensure the correct path
 import posts from './posts/posts.json'
 import { ActivePostProvider } from './context/ActivePostContext'; // Adjust path as needed
+import ContactButtons from './components/ContactButtons'; // Import the component
 
 
 function NavbarSelector() {
@@ -29,6 +30,7 @@ function App() {
     <ActivePostProvider>
       <Router>
         {/* Consider creating background component for all pages */}
+        <ContactButtons /> {/* Add the contact buttons here */}
         <NavbarSelector />
         <Routes>
           <Route path="/" element={<Landing />} />
