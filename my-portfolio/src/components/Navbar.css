@@ -79,6 +79,7 @@
     z-index: 10;
     left: 50%;
     top: 50%;
+    filter: brightness(0.9);
   }
 
   .logo-small {
@@ -91,13 +92,13 @@
     height:auto;
     transition: all 1s ease;
     z-index: 10;
-    filter:brightness(1);
+    filter:brightness(0.5);
   }
 
   .logo-small:hover {
     transition: all 0.2s ease;
     transform:scale(1.1,1.1);
-    filter:brightness(1.2);
+    filter:brightness(1);
 
   }
 
@@ -159,6 +160,7 @@
   .navbar-item.post {
     width: 15%;
     height: 5%;
+    filter: brightness(0.7);
   }
 
   .navbar-item.active{

@@ -25,7 +25,8 @@ p {
   height: 100vh;
   overflow: hidden;
   position: fixed;
-  background: linear-gradient(150deg, rgba(171,103,0,1) 0%, rgba(177,143,69,1) 27%, rgb(168, 48, 19) 57%, rgba(96,30,16,1) 100%);
+  /*background: linear-gradient(150deg, rgba(171,103,0,1) 0%, rgba(177,143,69,1) 27%, rgb(168, 48, 19) 57%, rgba(96,30,16,1) 100%);*/
+  background: linear-gradient(150deg, rgb(87, 28, 5) 0%, rgb(143, 64, 12) 27%, rgb(145, 44, 19) 50%, rgb(235, 119, 10) 100%);
 
 }
 

@@ -86,7 +86,30 @@
                 "content": [
                     { "type": "text", "value": "An application was designed which would use the composite design pattern to translate steps to assemble a piece of furniture into an AR format. Two methods were created to demonstrate an instruction in AR: \nThe first was by tracking real life objects using accurate 3D models and highlighting the location it should be placed while also informing the user if it had been placed correctly. This method would take advantage of " },
                     { "type": "link", "href": "https://visionlib.com/", "value": "VisionLib", "newTab":true },
-                    { "type": "text", "value": " object tracking. \nThe second method was more simple. It animated a 3D model of the current part from one location to another, indicating the correct way to place a part. \n\nThis application was developed in Unity and built to the Hololens. Individual and accurate 3D models of every part of a piece of furniture had to be modelled using Blender. These were then set up as furniture parts in Unity which were ordered in the order they should be added within a piece of furniture. Each part came under a component and a component could either be a part of the furniture or the entire furniture itself. This meant that separate parts could be put together before being added to the furniture. For example, a drawer could be assembled by itself before being added to a bedside table. \n\nA few of the features relied on the VisionLib SDK. Parts could be tracked between real life and digital space as long as the camera could recognise an inital pose for the object. This was tricky to get right in context as the application was often used in cluttered spaces which led to the application struggling to keep track of parts. VisionLib also came with an inbuilt voice command feature. This meant that all user interaction with the application was done through voice. \n\nSome  pilot testing was carried out which concluded that the application needed some user experience improvements. Some features that were added to maximise the user friendliness were a view part command which gave users a close up, rotating view of the current part and an arrow that pointed to the current part when it exited the field of view.\n\n" }
+                    { "type": "text", "value": " object tracking."} ]
+            },
+            {
+                "type":"image",
+                "src":"/ARPostPics/demoGif1.gif",
+                "alt":"Demo of object tracking",
+                "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-top":"20px", "width": "600px", "max-width":"95%" }
+            },
+            {
+                    "type": "p",
+                    "content": [
+                        { "type": "text", "value": "\nThe second method was more simple. It animated a 3D model of the current part from one location to another, indicating the correct way to place a part." }
+                    ]
+            },
+            {
+                "type":"image",
+                "src":"/ARPostPics/demoGif2.gif",
+                "alt":"Demo of object tracking",
+                "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-top":"20px", "width": "600px", "max-width":"95%" }
+            },
+            {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "\n(NOTE: Models lined up much better from the user's perspective than they do in the recorded demos)\n\nThis application was developed in Unity and built to the Hololens. Individual and accurate 3D models of every part of a piece of furniture had to be modelled using Blender. These were then set up as furniture parts in Unity which were ordered in the order they should be added within a piece of furniture. Each part came under a component and a component could either be a part of the furniture or the entire furniture itself. This meant that separate parts could be put together before being added to the furniture. For example, a drawer could be assembled by itself before being added to a bedside table. \n\nA few of the features relied on the VisionLib SDK. Parts could be tracked between real life and digital space as long as the camera could recognise an inital pose for the object. This was tricky to get right in context as the application was often used in cluttered spaces which led to the application struggling to keep track of parts. VisionLib also came with an inbuilt voice command feature. This meant that all user interaction with the application was done through voice. \n\nSome  pilot testing was carried out which concluded that the application needed some user experience improvements. Some features that were added to maximise the user friendliness were a view part command which gave users a close up, rotating view of the current part and an arrow that pointed to the current part when it exited the field of view.\n\n" }
                 ]
             },
             {
@@ -557,7 +580,7 @@
         "id": 11,
         "title": "Bench Bot",
         "cover_image": "benchBotBanner.jpg",
-        "description": "A fun discord bot managed an economy and allowed users to invest in a stock market.",
+        "description": "A fun discord bot that managed an economy and allowed users to invest in a stock market.",
         "is_ready": false,
         "content": [
             {
