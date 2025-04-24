@@ -1,0 +1,105 @@
+{
+    "id": 12,
+    "title": "Creative Work",
+    "cover_image": "creativeBanner.png",
+    "description": "A showcase of some of my artwork and creative projects.",
+    "is_ready": true,
+    "content": [
+        {
+            "type": "h2",
+            "content": "Minecraft City"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "This is my Minecraft world which I started in 2015. This began when I developed an interest in skyscrapers as a young teen which has eventually developed into a love of city planning and world building. I have worked on this over the years since, eventually coming to build 4 unique cities. The world is filled with details, lore, and easter eggs.\n\n" }
+            ]
+        },
+        {
+            "type": "Gallery",
+            "style": { "width": "75%", "height": "auto", "margin-left": "auto", "margin-right": "auto", "margin-bottom": "20px" },
+            "images": [
+                { "src": "/CreativePostPics/minecraftPic0.png", "alt": "Slide 1", "img_id": 0 },
+                { "src": "/CreativePostPics/minecraftPic1.png", "alt": "Slide 2", "img_id": 1 },
+                { "src": "/CreativePostPics/minecraftPic2.png", "alt": "Slide 3", "img_id": 2 },
+                { "src": "/CreativePostPics/minecraftPic3.png", "alt": "Slide 4", "img_id": 3 },
+                { "src": "/CreativePostPics/minecraftPic4.png", "alt": "Slide 5", "img_id": 4 },
+                { "src": "/CreativePostPics/minecraftPic5.png", "alt": "Slide 6", "img_id": 5 },
+                { "src": "/CreativePostPics/minecraftPic6.png", "alt": "Slide 7", "img_id": 6 },
+                { "src": "/CreativePostPics/minecraftPic7.png", "alt": "Slide 8", "img_id": 7 },
+                { "src": "/CreativePostPics/minecraftPic8.png", "alt": "Slide 9", "img_id": 8 },
+                { "src": "/CreativePostPics/minecraftPic9.png", "alt": "Slide 10", "img_id": 9 },
+                { "src": "/CreativePostPics/minecraftPic10.png", "alt": "Slide 11", "img_id": 10 },
+                { "src": "/CreativePostPics/minecraftPic11.png", "alt": "Slide 12", "img_id": 11 },
+                { "src": "/CreativePostPics/minecraftPic12.png", "alt": "Slide 13", "img_id": 12 },
+                { "src": "/CreativePostPics/minecraftPic13.png", "alt": "Slide 14", "img_id": 13 },
+                { "src": "/CreativePostPics/minecraftPic14.png", "alt": "Slide 15", "img_id": 14 },
+                { "src": "/CreativePostPics/minecraftPic15.png", "alt": "Slide 16", "img_id": 15 }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Planet Coaster Island"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "This is a very new project but one that has been on my mind for a long time. It is a tropical pirate haven named Chillis Island, which is also the location in " },
+                { "type": "link", "href": "/post/raaezo-man", "value": "RAaEzo Man Battle.", "newTab": false },
+                {"type": "text", "value": " Planet Coaster 2 is the perfect tool to build this world in with it's 3D building and terraforming capabilities.\n\n"}
+            ]
+        },
+        {
+            "type": "Gallery",
+            "style": { "width": "75%", "height": "auto", "margin-left": "auto", "margin-right": "auto", "margin-bottom": "20px" },
+            "images": [
+                { "src": "/CreativePostPics/coasterPic0.jpg", "alt": "Slide 1", "img_id": 0 },
+                { "src": "/CreativePostPics/coasterPic1.jpg", "alt": "Slide 2", "img_id": 1 },
+                { "src": "/CreativePostPics/coasterPic2.jpg", "alt": "Slide 3", "img_id": 2 },
+                { "src": "/CreativePostPics/coasterPic3.jpg", "alt": "Slide 4", "img_id": 3 },
+                { "src": "/CreativePostPics/coasterPic4.jpg", "alt": "Slide 5", "img_id": 4 },
+                { "src": "/CreativePostPics/coasterPic5.jpg", "alt": "Slide 6", "img_id": 5 },
+                { "src": "/CreativePostPics/coasterPic6.jpg", "alt": "Slide 7", "img_id": 6 },
+                { "src": "/CreativePostPics/coasterPic7.jpg", "alt": "Slide 8", "img_id": 7 },
+                { "src": "/CreativePostPics/coasterPic8.jpg", "alt": "Slide 9", "img_id": 8 },
+                { "src": "/CreativePostPics/coasterPic9.jpg", "alt": "Slide 10", "img_id": 9 }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Cities Skylines"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "A range of my creations in Cities Skylines 2. I enjoy creating custom maps that others can use themselves. My best custom map was a scaled down version of Glasgow and the West coast of Scotland created from scratch. This map received over 1000 downloads on " },
+                { "type": "link", "href": "https://mods.paradoxplaza.com/mods/77374/Any", "value": "Paradox Mods.", "newTab": true },
+                { "type": "text", "value": " I was incredibly proud of the racetrack and football stadium I built on one of my cities. These venues saw the praise of a prominent and very skilled member of the Cities Skylines community.\n\n" }
+            ]
+        },
+        {
+            "type": "Gallery",
+            "style": { "width": "75%", "height": "auto", "margin-left": "auto", "margin-right": "auto", "margin-bottom": "20px" },
+            "images": [
+                { "src": "/CreativePostPics/citiesPic0.png", "alt": "Slide 1", "img_id": 0 },
+                { "src": "/CreativePostPics/citiesPic1.png", "alt": "Slide 2", "img_id": 1 },
+                { "src": "/CreativePostPics/citiesPic2.png", "alt": "Slide 3", "img_id": 2 },
+                { "src": "/CreativePostPics/citiesPic3.png", "alt": "Slide 4", "img_id": 3 },
+                { "src": "/CreativePostPics/citiesPic4.png", "alt": "Slide 5", "img_id": 4 },
+                { "src": "/CreativePostPics/citiesPic5.png", "alt": "Slide 6", "img_id": 5 },
+                { "src": "/CreativePostPics/citiesPic6.png", "alt": "Slide 7", "img_id": 6 },
+                { "src": "/CreativePostPics/citiesPic7.png", "alt": "Slide 8", "img_id": 7 },
+                { "src": "/CreativePostPics/citiesPic8.png", "alt": "Slide 9", "img_id": 8 },
+                { "src": "/CreativePostPics/citiesPic9.png", "alt": "Slide 10", "img_id": 9 },
+                { "src": "/CreativePostPics/citiesPic10.png", "alt": "Slide 11", "img_id": 10 },
+                { "src": "/CreativePostPics/citiesPic11.png", "alt": "Slide 12", "img_id": 11 },
+                { "src": "/CreativePostPics/citiesPic12.png", "alt": "Slide 13", "img_id": 12 },
+                { "src": "/CreativePostPics/citiesPic13.png", "alt": "Slide 14", "img_id": 13 },
+                { "src": "/CreativePostPics/citiesPic14.png", "alt": "Slide 15", "img_id": 14 },
+                { "src": "/CreativePostPics/citiesPic15.png", "alt": "Slide 16", "img_id": 15 },
+                { "src": "/CreativePostPics/citiesPic16.png", "alt": "Slide 17", "img_id": 16 },
+                { "src": "/CreativePostPics/citiesPic17.png", "alt": "Slide 18", "img_id": 17 }
+            ]
+        }
+    ]
+}

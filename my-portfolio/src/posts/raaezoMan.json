@@ -1,0 +1,19 @@
+{
+    "id": 8,
+    "title": "RAaEzo Man",
+    "cover_image": "raaezomanBanner.png",
+    "description": "A game created during my time at high school. A 2D fighting game with completely custom artwork and music. Created in Game Maker, this was the first completely unique project I had developed alone.",
+    "is_ready": false,
+    "content": [
+        {
+            "type": "h2",
+            "content": "About Me"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+            ]
+        }
+    ]
+}

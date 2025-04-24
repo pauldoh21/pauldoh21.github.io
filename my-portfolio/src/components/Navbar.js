@@ -43,6 +43,7 @@ function Navbar({ type }) {
     if (activePost) {
       const newPage = posts.findIndex((post) => post.id === activePost.id) + 1;
       setActivePage(newPage);
+      console.log('Active page:', newPage); // Debugging log
   
       const delta = (newPage - activePage + posts.length) % posts.length;
       const shortestRotation = delta <= posts.length / 2 ? delta : delta - posts.length;
@@ -103,6 +104,13 @@ function Navbar({ type }) {
     setRotation((prev) => prev - shortestRotation * angleStep);
   };
 
+  const slugify = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric characters with hyphens
+      .replace(/^-+|-+$/g, '');   // Remove leading or trailing hyphens
+  };
+
   useEffect(() => {
     if (pendingPost) {
       setActivePost(pendingPost);  // Update context after render completes
@@ -141,7 +149,7 @@ function Navbar({ type }) {
               };
 
               return (
-                <Link key={post.id} className="navbar-link" to={`/post/${post.id}`}>
+                <Link key={post.id} className="navbar-link" to={`/post/${slugify(post.title)}`}>
                   <motion.div
                     className={`navbar-item${classifyIndex()}${type === 3 ? ' post' : ''}`}
                     style={{

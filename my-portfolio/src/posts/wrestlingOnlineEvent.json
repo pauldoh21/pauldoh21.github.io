@@ -1,0 +1,19 @@
+{
+    "id": 9,
+    "title": "Wrestling Online Event",
+    "cover_image": "wctBanner.png",
+    "description": "A giant tournament based in WWE 2K22 with 64 custom-made characters. Created artwork and 3D animations. Developed program to help with broadcasting the event.",
+    "is_ready": false,
+    "content": [
+        {
+            "type": "h2",
+            "content": "About Me"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+            ]
+        }
+    ]
+}

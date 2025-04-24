@@ -1,0 +1,19 @@
+{
+    "id": 10,
+    "title": "This Portfolio",
+    "cover_image": "portfolioBanner.png",
+    "description": "This portfolio was developed using React. While it wasn't my first attempt at web development, it was my first time using React and attempting such a unique design for a website. The website is inspired by 2000s video game and console user interfaces.",
+    "is_ready": false,
+    "content": [
+        {
+            "type": "h2",
+            "content": "About Me"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,207 @@
+{
+    "id": 3,
+    "title": "Charity Football Match",
+    "cover_image": "footballBanner.jpg",
+    "description": "Hosted a charity football match in memory of a close friend. Raised money and donations for a local foodbank. Gathered a live crowd but also developed a program to enhance a live broadcast/replay of the event.",
+    "is_ready": true,
+    "content": [
+        {
+            "type": "h2",
+            "content": "Background"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "In early 2024, I lost a very close friend. To honor his memory, my friends and I organized a charity 11-a-side football match in his name. We gathered a live audience, raised £4,910, and collected food donations for the local food bank. \n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Planning the Event"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "Our team of four began with modest plans, but our ambitions grew as we realized our potential. We coordinated various aspects, including:" }
+            ]
+        },
+        {
+            "type": "ul", 
+            "content": ["Venue selection", "Recruiting 24+ players", "Fundraising methods", "Designing custom team kits"] 
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "\nAs a group we split all of the issues between us and came together every week to discuss progress and help each other out. To attract participants, we designed promotional posters and posted them online. We reached out to members of the local community which led to us securing a fantastic venue and coverage in local media. Read more about our story " },
+                { "type": "link", "href":"https://www.barrheadnews.com/news/24614960.match-honour-jonathan-morrin-held-neilston/", "value":"here", "newTab":true },
+                { "type": "text", "value": ".\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Broadcasting the Event"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "To make the match accessible to those who couldn't attend, I developed a broadcast system resembling professional football coverage. Built using Python and integrated with OBS, the software tracked the match and overlaid dynamic graphics on the recording. \n\nIt was a priority to keep the application from being too specific to this one match. To achieve this I set up a modular structure allowing users to configure 'Games', 'Teams' and 'Players'. A saving system was set up for each of these objects which means that users could even save a match in its exact state midway through.\n\n" }
+            ]
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "I developed a user-friendly editorfor customizing teams. All information of a team could be changed and the players on a team can be managed from here.\n\n" }
+            ]
+        },
+        {
+            "type":"image",
+            "src":"/CharityPostPics/editor.png",
+            "alt":"The team editor",
+            "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-bottom":"20px", "width": "700px", "max-width":"95%" },
+            "img_id": 0
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "The editor included a formation manager with drag-and-drop functionality, enabling users to set up complex formations which would be used in starting lineups for broadcast displays.\n\n" }
+            ]
+        },
+        {
+            "type":"div",
+            "className": "row",
+            "content": [
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/formation.png",
+                    "alt":"The formation editor",
+                    "className":"column",
+                    "style":{ "height":"30vh" },
+                    "img_id": 1
+                },
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/formation2.png",
+                    "alt":"The formation as shown in broadcast",
+                    "className":"column",
+                    "style":{ "height":"25vh" },
+                    "img_id": 2
+                }
+            ]
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "\nOnce a match was set up, the software connected with OBS using web sockets. A control panel allowed real-time management of game events—goals, cards, substitutions, and replays. The interface prioritized the clarity of information and maximum user control to ensure it could be operated live with minimal errors. Replay controls allowed moments such as goals being scored, to be revisited. At these points, footage would be split and the program would go automatically to the end of that clip to show a replay.\n\n" }
+            ]
+        },
+        {
+            "type":"image",
+            "src":"/CharityPostPics/ui.png",
+            "alt":"The match interface",
+            "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-bottom":"20px", "width": "700px", "max-width":"95%" },
+            "img_id": 3
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "The match overlay displayed dynamic updates (e.g., goals, cards, substitutions) with custom animations. The animations were all manually implemented by moving item positions or updating a mask within a loop. A penalty shootout feature was even implemented for the case of a draw, but this feature was never required.\n\n" }
+            ]
+        },
+        {
+            "type":"div",
+            "className": "row",
+            "content": [
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/ingame1.png",
+                    "alt":"The display at the start of a half",
+                    "style": { "height":"23vh" },
+                    "className": "column",
+                    "img_id": 4
+                },
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/ingame2.png",
+                    "alt":"The display druing regular time",
+                    "style": { "height":"23vh" },
+                    "className": "column",
+                    "img_id": 5
+                },
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/ingame3.png",
+                    "alt":"The substitution popup",
+                    "style": { "height":"23vh" },
+                    "className": "column",
+                    "img_id": 6
+                }
+            ]
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "\nThis application was fully capable of broadcasting the match live online. Unfortunately we did not have access to the required tech to connect multiple cameras to one device and I could not guarantee a reliable internet connection. This meant that the footage was prerecorded with one camera angle and uploaded later. In future I aim to have the match go out live in the likely event that we have another charity match next year.\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Badges & Kits"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "I personally designed the badges and kits for both teams. The teams were inspired by two of our friend's favourite places: Malone's Irish Bar in Glasgow and Arthurlie FC's home ground, Dunterlie. \n\n AC Malones:\n\n" }
+            ]
+        },
+        {
+            "type":"div",
+            "className": "row",
+            "content": [
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/ACMalones.png",
+                    "alt":"The formation editor",
+                    "className":"column",
+                    "style":{ "height":"30vh" },
+                    "img_id": 7
+                },
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/ACMalonesKit.png",
+                    "alt":"The formation as shown in broadcast",
+                    "className":"column",
+                    "style":{ "height":"35vh" },
+                    "img_id": 8
+                }
+            ]
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "\n\nDunterlie Dynamos:\n\n" }
+            ]
+        },
+        {
+            "type":"div",
+            "className": "row",
+            "content": [
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/DunterlieDynamos.png",
+                    "alt":"The formation editor",
+                    "className":"column",
+                    "style":{ "height":"30vh" },
+                    "img_id": 9
+                },
+                {
+                    "type":"image",
+                    "src":"/CharityPostPics/DunterlieDynamosKit.png",
+                    "alt":"The formation as shown in broadcast",
+                    "className":"column",
+                    "style":{ "height":"35vh" },
+                    "img_id": 10
+                }
+            ]
+        }
+    ]
+}

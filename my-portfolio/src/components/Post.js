@@ -1,27 +1,34 @@
 import React, { useEffect, useContext, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { ActivePostContext } from '../context/ActivePostContext';  // Import the context
+import { useParams } from 'react-router-dom'; // Import useParams
+import { ActivePostContext } from '../context/ActivePostContext';
+import posts from '../posts/posts.json'; // Import posts data
 import Gallery from './Gallery';
 import ModalGallery from './ModalGallery';
 
-function Post({ posts }) {
-  const { id } = useParams();
-  const post = posts.find((p) => p.id === parseInt(id));
-
-  // Access the context to update the active post
-  const { setActivePost } = useContext(ActivePostContext);
+function Post() {
+  const { slug } = useParams(); // Get the slug from the URL
+  const { activePost, setActivePost } = useContext(ActivePostContext);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Update the active post when the component mounts or the ID changes
-  useEffect(() => {
-    if (post) {
-      setActivePost(post);
-    }
-  }, [post, setActivePost]); // Dependencies ensure this runs when post changes
+  // Helper function to slugify a title (same logic as in Navbar.js)
+  const slugify = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric characters with hyphens
+      .replace(/^-+|-+$/g, '');   // Remove leading or trailing hyphens
+  };
 
-  if (!post) return <p>Post not found</p>;
+  // Update the active post based on the slug
+  useEffect(() => {
+    const post = posts.find((p) => slugify(p.title) === slug); // Find the post by slug
+    if (post) {
+      setActivePost(post); // Update the active post in context
+    }
+  }, [slug, setActivePost]);
+
+  if (!activePost) return <p>Post not found</p>;
 
   // Helper function to render content blocks
   const renderContent = (contentArray) => {
@@ -91,7 +98,6 @@ function Post({ posts }) {
             </div>
           );
 
-        // New 'div' case to handle nested blocks
         case 'div':
           return (
             <div key={index} style={block.style || {}} className={block.className || {}}>
@@ -121,9 +127,8 @@ function Post({ posts }) {
     return images;
   };
 
-
   // Use the helper function to get all images for the modal
-  const allImages = extractImages(post.content);
+  const allImages = extractImages(activePost.content);
 
   const openModal = (index) => {
     console.log('Opening modal for image index:', index);
@@ -134,7 +139,7 @@ function Post({ posts }) {
   return (
     <div id="main" className="post-container">
       <div className="post-box">
-        <h1>{post.title}</h1>
+        <h1>{activePost.title}</h1>
         {isModalOpen && (
           <ModalGallery
             index={currentImageIndex} // Pass the current image index to the modal
@@ -143,8 +148,8 @@ function Post({ posts }) {
             onClose={() => setIsModalOpen(false)}
           />
         )}
-        {post.is_ready ? (
-          renderContent(post.content)
+        {activePost.is_ready ? (
+          renderContent(activePost.content)
         ) : (
           <p>This post is currently a work in progress.</p>
         )}

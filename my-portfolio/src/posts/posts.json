@@ -664,7 +664,7 @@
                 "type": "p",
                 "content": [
                     { "type": "text", "value": "This is a very new project but one that has been on my mind for a long time. It is a tropical pirate haven named Chillis Island, which is also the location in " },
-                    { "type": "link", "href": "/post/8", "value": "RAaEzo Man Battle.", "newTab": false },
+                    { "type": "link", "href": "/post/raaezo-man", "value": "RAaEzo Man Battle.", "newTab": false },
                     {"type": "text", "value": " Planet Coaster 2 is the perfect tool to build this world in with it's 3D building and terraforming capabilities.\n\n"}
                 ]
             },

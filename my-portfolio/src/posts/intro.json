@@ -1,0 +1,52 @@
+{
+    "id": 1,
+    "title": "Intro",
+    "cover_image": "introBanner.png",
+    "description": "Hi, I'm Paul Doherty, a recent Computing Science graduate from Glasgow, Scotland. This website covers a variety of the projects I have worked on over the past years, from software development to entirely creative projects. Scroll through the wheel on the left to get a preview of each project and click into an item to read a detailed description.\n\n This site is still a work in progress, so please bear with me as I continue to add more content and polish the site. If you have any questions or would like to get in touch, please feel free to reach out.",
+    "is_ready": true,
+    "content": [
+        {
+            "type": "h2",
+            "content": "About Me"
+        },
+        {
+            "type": "image",
+            "src": "/profile.jpg",
+            "alt": "Profile Picture",
+            "style": { "float": "right", "width": "250px", "margin": "15px" },
+            "img_id": 0
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "Hi, I'm Paul Doherty, a Computing Science graduate from the University of Glasgow with a deep passion for building unique and memorable experiences. Whether it's hosting live events, producing creative content, or developing games, I love combining my technical background with a creative mindset to bring big ideas to life.\n\n" }
+            ]
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "Game design, in particular, feels like the perfect intersection of everything I enjoy. It brings together art, storytelling, design, and technology, all skills which I have held a long-term passion for. From sketching concept art to crafting gameplay mechanics, every step of the process is an opportunity to express myself and connect with others in a meaningful way. \n\nI've been drawing since I was a kid, and that evolved into creating concept art, pixel sprites, and textures for my games. Later, I tried out 3D modelling and animation, a steep learning curve, but one that opened the door to building more ambitious 3D experiences. I'm also interested in level and gameplay design, where the challenge lies in crafting something that feels truly original. When it works, there's nothing quite like it.\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "About This Site"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "This portfolio is a collection of the projects I've worked on over the past few years. While most are rooted in software and computing, others lean more toward creative expression. Altogether, they showcase my versatility in skills and show off the things I care most about, creating, problem solving, and sharing experiences that matter.\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "My Logo"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "The logo featured on this site is one I designed when I was 15 in 2017. Originally it served as a logo for my YouTube channel but has developed into a symbol I use to represent my projects and creative work.\n\n" }
+            ]
+        }
+    ]
+}

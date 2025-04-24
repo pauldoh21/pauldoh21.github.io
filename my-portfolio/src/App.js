@@ -29,13 +29,12 @@ function App() {
   return (
     <ActivePostProvider>
       <Router>
-        {/* Consider creating background component for all pages */}
-        <ContactButtons /> {/* Add the contact buttons here */}
+        <ContactButtons />
         <NavbarSelector />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/post/:id" element={<Post posts={posts} />} />
+          <Route path="/post/:slug" element={<Post />} />
         </Routes>
       <Background />
       </Router>

@@ -1,0 +1,76 @@
+{
+    "id": 2,
+    "title": "AR Flatpack Assembly",
+    "cover_image": "arBanner.png",
+    "description": "The project for my final year dissertation at university. This is a tool to help users assemble flatpack furniture without paper instructions using augmented reality on the Microsoft Hololens 2.",
+    "is_ready": true,
+    "content": [
+        {
+            "type": "h2",
+            "content": "Overview"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "As my final year dissertation project for university, I designed and developed an augmented reality (AR) application, built on the Microsoft Hololens 2, which aimed to assist users in assembling flatpack furniture. The aim of the project was to determine the benefits of hands-free AR instructions over a traditional set of paper instructions.\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Research & Analysis"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "To gain a background, a comprehensive literature review was carried out. This studied previous AR applications in industrial and consumer contexts. A gap was discovered for consumers where industries had taken advantage of AR capabilites. AR had been proven effective at providing instructions for workers in an indrustrial environment, yet this hadn't been experimented much with in a more general context.\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Design & Development"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "An application was designed which would use the composite design pattern to translate steps to assemble a piece of furniture into an AR format. Two methods were created to demonstrate an instruction in AR: \nThe first was by tracking real life objects using accurate 3D models and highlighting the location it should be placed while also informing the user if it had been placed correctly. This method would take advantage of " },
+                { "type": "link", "href": "https://visionlib.com/", "value": "VisionLib", "newTab":true },
+                { "type": "text", "value": " object tracking."} ]
+        },
+        {
+            "type":"image",
+            "src":"/ARPostPics/demoGif1.gif",
+            "alt":"Demo of object tracking",
+            "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-top":"20px", "width": "600px", "max-width":"95%" },
+            "img_id": 0
+        },
+        {
+                "type": "p",
+                "content": [
+                    { "type": "text", "value": "\nThe second method was more simple. It animated a 3D model of the current part from one location to another, indicating the correct way to place a part." }
+                ]
+        },
+        {
+            "type":"image",
+            "src":"/ARPostPics/demoGif2.gif",
+            "alt":"Demo of object tracking",
+            "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-top":"20px", "width": "600px", "max-width":"95%" },
+            "img_id": 1
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "\n(NOTE: Models lined up much better from the user's perspective than they do in the recorded demos)\n\nThis application was developed in Unity and built to the Hololens. Individual and accurate 3D models of every part of a piece of furniture had to be modelled using Blender. These were then set up as furniture parts in Unity which were ordered in the order they should be added within a piece of furniture. Each part came under a component and a component could either be a part of the furniture or the entire furniture itself. This meant that separate parts could be put together before being added to the furniture. For example, a drawer could be assembled by itself before being added to a bedside table. \n\nA few of the features relied on the VisionLib SDK. Parts could be tracked between real life and digital space as long as the camera could recognise an inital pose for the object. This was tricky to get right in context as the application was often used in cluttered spaces which led to the application struggling to keep track of parts. VisionLib also came with an inbuilt voice command feature. This meant that all user interaction with the application was done through voice. \n\nSome  pilot testing was carried out which concluded that the application needed some user experience improvements. Some features that were added to maximise the user friendliness were a view part command which gave users a close up, rotating view of the current part and an arrow that pointed to the current part when it exited the field of view.\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Evaluation & Results"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "A user study was carried out which split participants into 3 groups: paper, tracking, and animation. Each group assembled a bedside table using their given instructions. Any time a participant encountered an issue, it was noted and categorised. This was used to measure the effectiveness of each set of instructions. \n\nAR proved to be effective over paper instructions, especially the animated instructions. Participants tended to select the wrong parts and place parts wrong more while reading off paper whereas AR helped them to be more sure of what a part looked like and exactly how it should be placed. The object tracking method did not get used in its intended way very often as the tracking was just too unreliable. Otherwise, the biggest issue with the AR instructions was the learning curve. Users made most of their mistakes near the start of the process but towards the end, made significanly less. \n\nThe project concluded that AR has some serious potential in improving the experience of assembling flatpack furniture. The lack of availability of hands-free AR currently is holding this back. An application which had improved object tracking a clear user guide to mitigate the learning curve would make for an excellent product. \n\n" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "id": 4,
+    "title": "UI Strategy Game",
+    "cover_image": "sunitaBanner.png",
+    "description": "Developed as part of a team project, this user interface focused game simulates an economy and allows you to enact policies and balance your budget to get the best results. Requirements for project were set by a customer",
+    "is_ready": true,
+    "content": [
+        {
+            "type": "h2",
+            "content": "Overview"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "Sunita was a team project developed during my time at university, created for a customer who set the requirements. The goal was to design a prototype that could eventually evolve into a full-fledged educational simulation game. The game challenges players to balance various economic variables by enacting policies and managing a budget. I was mainly responsible for developing the user interface (UI) and contributed significantly to the overall game design.\n\nThe core gameplay revolves around setting policies and allocating budgets, where each policy impacts specific variables and, subsequently, other interconnected elements. After setting their strategy, players advance through turns to see the outcomes of their decisions.\n\nTo support its educational purpose, we implemented a scenario save system. This feature allows users to create custom scenarios by defining variables and their dependencies through custom formulas. The system's design allows for challenges with diverse starting conditions to be created. The game's observer pattern architecture ensures that changes to one variable automatically update all dependent variables.\n\n Developed in Unity, this project marked the team's first experience with full-scale Unity development, a valuable learning opportunity that also came with unique challenges.\n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Development Process"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "The development was carried out using agile methodology. It was broken up into sprints which concluded with customer review meetings. These meetings allowed us to provide updates on our progress and make sure our work aligned with their requirements. These were followed by scrum meetings in which we carried out retrospectives to ensure development stayed on track. When looking forward we created issues and used planning poker to assign them story points.\n\nMy primary role involved designing and developing the UI. This started with researching other user interface based strategy games. Using these as reference, each member of the team put together a wireframe and presented them. The best aspects from each design were agreed upon and I gathered them into a final wireframe.\n\n" }
+            ]
+        },
+        {
+            "type":"div",
+            "className": "row",
+            "content": [
+                {
+                    "type":"image",
+                    "src":"/SunitaPostPics/wireframe1.png",
+                    "alt":"Wireframe design",
+                    "className":"column",
+                    "style":{ "height":"20vh" },
+                    "img_id": 0
+                },
+                {
+                    "type":"image",
+                    "src":"/SunitaPostPics/wireframe2.png",
+                    "alt":"Wireframe design",
+                    "className":"column",
+                    "style":{ "height":"20vh" },
+                    "img_id": 1
+                },
+                {
+                    "type":"image",
+                    "src":"/SunitaPostPics/wireframe3.png",
+                    "alt":"Wireframe design",
+                    "className":"column",
+                    "style":{ "height":"20vh" },
+                    "img_id": 2
+                }
+            ]
+        },
+        {
+            "type":"image",
+            "src":"/SunitaPostPics/finalWireframe.png",
+            "alt":"The final wireframe",
+            "style":{ "display":"block", "margin-left": "auto", "margin-right": "auto", "margin-top":"20px", "margin-bottom":"20px", "width": "400px", "max-width":"95%" },
+            "img_id": 3
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "I also took an important role in directing the team. I would regularly partake in peer programming as the navigator with other members. This led to many of my ideas making their way into the project. Much of the gameplay design for policies and variables affecting each other through formulas came from my ideas.\n\nThe final game appeared as follows: \n\n" }
+            ]
+        },
+        {
+            "type":"div",
+            "className": "row",
+            "content": [
+                {
+                    "type":"image",
+                    "src":"/SunitaPostPics/mainMenu.png",
+                    "alt":"Wireframe design",
+                    "className":"column",
+                    "style":{ "height":"25vh" },
+                    "img_id": 4
+                },
+                {
+                    "type":"image",
+                    "src":"/SunitaPostPics/editor.png",
+                    "alt":"Wireframe design",
+                    "className":"column",
+                    "style":{ "height":"25vh" },
+                    "img_id": 5
+                }
+            ]
+        },
+        {
+            "type":"div",
+            "className": "row",
+            "content": [
+                {
+                    "type":"image",
+                    "src":"/SunitaPostPics/mainScreen1.png",
+                    "alt":"Wireframe design",
+                    "className":"column",
+                    "style":{ "height":"25vh" },
+                    "img_id": 6
+                },
+                {
+                    "type":"image",
+                    "src":"/SunitaPostPics/mainScreen2.png",
+                    "alt":"Wireframe design",
+                    "className":"column",
+                    "style":{ "height":"25vh" },
+                    "img_id": 7
+                }
+            ]
+        },
+        {
+            "type": "p",
+            "content": [{"type":"text", "value":"\n\n"}]
+        },
+        {
+            "type": "h2",
+            "content": "Challenges"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "The most significant challenge was learning Unity while developing a complex project. Learning how to master different aspects (UI systems, economic logic, and save/load functionality) within tight deadlines meant we had to scale back some planned features. The customer deemed this acceptable as they were only looking for a prototype. Focusing on extensibility ensured that the customer received a robust prototype with potential for future enhancements. \n\n" }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Reflection"
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "While the customer was pleased with the final product, we identified several areas for improvement: " }
+            ]
+        },
+        {
+            "type":"ul",
+            "content":["The UI had minor visual and functional bugs.", "The tutorial lacked user-friendliness.", "The formula system for variable relationships was basic, limiting advanced interactions."]
+        },
+        {
+            "type": "p",
+            "content": [
+                { "type": "text", "value": "\nDespite these challenges, the project provided a realistic industry experience. It solidified my understanding of agile development, team collaboration, and Unity programming skills that have become foundational in my game development journey. \n\n" }
+            ]
+        }
+    ]
+}
