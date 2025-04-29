@@ -506,18 +506,144 @@
     {
         "id": 6,
         "title": "Game Shows",
-        "cover_image": "gameShowsBanner.png",
-        "description": "Recreated a selection of iconic game shows using Python and OBS. Broadcasted them with different guests every time to a live audience online.",
-        "is_ready": false,
+        "cover_image": "gameshowsBanner.png",
+        "description": "During the 2020 lockdown, I began creating interactive online game show experiences, starting with small livestreams and eventually developing fully automated show control software using Python and OBS integrations.",
+        "is_ready": true,
         "content": [
             {
                 "type": "h2",
-                "content": "About Me"
+                "content": "Background"
             },
             {
                 "type": "p",
                 "content": [
-                    { "type": "text", "value": "My name is Paul Doherty and I am a recent Computing Science graduate from the University of Glasgow. My absolute favourite thing to do in life is to create unique experiences for others to enjoy. The best way I have found to do this is to combine my computing and software design skills with my creative side to put together big projects. This can come in a variety of forms such as hosting live online/in person events, creating content, or even developing games.\n\n" }
+                    {
+                        "type": "text",
+                        "value": "During the early stages of the 2020 lockdown, online quizzes and virtual meetups were very popular. After participating in a few of these events, I saw an opportunity to improve the experience using my technical and creative skills.\n\nI began with a simple livestreamed version of 'Deal or No Deal', using Photoshop for visuals, OBS for broadcasting, and a soundboard for effects. Although it was basic, the show was fun and well-received, which motivated me to pursue more ambitious projects.\n\nNext, I created a 'Who Wants to Be a Millionaire' template and hosted a streamed episode. Realising the limitations of manual stream control, I decided to build a custom software application to automate the show’s logistics, allowing me to focus on hosting and audience interaction.\n\n"
+                    }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Who Wants to Be a Millionaire"
+            },
+            {
+                "type": "p",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "I developed a custom application in Python using Tkinter and integrated it with OBS using WebSockets. This tool enabled real-time control of on-screen visuals, episode progression, and question tracking, all from a single interface.\n\nI also implemented a contestant tracking system and leaderboard. One of the standout features was a fully scripted lifeline system, including an Ask the Audience feature. This lifeline read responses from the YouTube Live chat in real time and generated a graph of answers at the end.\n\nOver the course of a year, I produced 14 episodes, each featuring new contestants and original question sets written by friends. At its peak, the show attracted a regular audience, with viewers gathering around TVs to watch as if it were a traditional broadcast, which created a real sense of community.\n\n"
+                    }
+                ]
+            },
+            {
+                "type": "div",
+                "className": "row",
+                "content": [
+                    {
+                        "type": "image",
+                        "src": "/GameShowsPostPics/millionaireApp.png",
+                        "alt": "Millionaire Application Interface",
+                        "className": "column",
+                        "style": { "height": "25vh" },
+                        "img_id": 0
+                    },
+                    {
+                        "type": "image",
+                        "src": "/GameShowsPostPics/millionaireStream.png",
+                        "alt": "Millionaire Livestream",
+                        "className": "column",
+                        "style": { "height": "25vh" },
+                        "img_id": 1
+                    }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "The Weakest Link"
+            },
+            {
+                "type": "p",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "After nine unique contestants had participated in 'Millionaire', I brought them back for a special 'The Weakest Link' episode. This required building a completely new software system and visual identity for the show.\n\nI created original graphics, 3D animated the show’s intro, and engineered a more complex application capable of handling player rotation, round timers, score tracking, and elimination voting. This project pushed my skills in design, real-time event logic, and robustness.\n\n"
+                    }
+                ]
+            },
+            {
+                "type": "div",
+                "className": "row",
+                "content": [
+                    {
+                        "type": "image",
+                        "src": "/GameShowsPostPics/weakestLinkApp.png",
+                        "alt": "Weakest Link Application Interface",
+                        "className": "column",
+                        "style": { "height": "25vh" },
+                        "img_id": 2
+                    },
+                    {
+                        "type": "image",
+                        "src": "/GameShowsPostPics/weakestLinkStream.png",
+                        "alt": "Weakest Link Livestream",
+                        "className": "column",
+                        "style": { "height": "25vh" },
+                        "img_id": 3
+                    }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Countdown"
+            },
+            {
+                "type": "p",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "The final entry in the series was a custom version of Countdown. In addition to developing a new control interface, I built a Discord bot to support a co-presenter. This bot fetched and delivered top answers for both the letters and numbers rounds in real time, allowing for a smooth presentation process.\n\n"
+                    }
+                ]
+            },
+            {
+                "type": "div",
+                "className": "row",
+                "content": [
+                    {
+                        "type": "image",
+                        "src": "/GameShowsPostPics/countdownApp.png",
+                        "alt": "Countdown Application Interface",
+                        "className": "column",
+                        "style": { "height": "25vh" },
+                        "img_id": 4
+                    },
+                    {
+                        "type": "image",
+                        "src": "/GameShowsPostPics/countdownStream.png",
+                        "alt": "Countdown Livestream",
+                        "className": "column",
+                        "style": { "height": "25vh" },
+                        "img_id": 5
+                    }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Conclusion"
+            },
+            {
+                "type": "p",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "This series of game shows was not only a creative outlet during a difficult time but also a valuable learning opportunity for my development, design, and broadcasting skills. The applications I built for these projects served as the foundation for a more advanced broadcasting system I later used to host and manage a "},
+                    {   
+                        "type": "link", "href": "/post/charity-football-match", "value": "livestreamed charity football match", "newTab": false },
+                    {   
+                        "type": "text",
+                        "value": ". Through these experiences, I gained practical expertise in real-time software control, audience engagement, and live event production, skills that continue to influence my work today.\n\n"
+                    }
                 ]
             }
         ]
