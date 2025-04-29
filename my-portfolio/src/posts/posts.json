@@ -506,7 +506,7 @@
     {
         "id": 6,
         "title": "Game Shows",
-        "cover_image": "gameshowsBanner.png",
+        "cover_image": "gameShowsBanner.png",
         "description": "During the 2020 lockdown, I began creating interactive online game show experiences, starting with small livestreams and eventually developing fully automated show control software using Python and OBS integrations.",
         "is_ready": true,
         "content": [
