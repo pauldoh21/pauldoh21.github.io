@@ -29,6 +29,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Debug environment (temporary)
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          echo "NOTION_TOKEN is ${NOTION_TOKEN:+set}"
+          echo "NOTION_DATABASE_ID is ${NOTION_DATABASE_ID:+set}"
+
       - name: Run script to generate calendar.ics
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
