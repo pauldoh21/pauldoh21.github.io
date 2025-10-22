@@ -1,0 +1,68 @@
+name: Publish Notion calendar to gh-pages
+
+on:
+  # run every 4 hours (cron uses UTC)
+  schedule:
+    - cron: '30 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run script to generate calendar.ics
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          python notion_to_ics.py
+          ls -la calendar.ics
+
+      - name: Publish to gh-pages branch
+        env:
+          GIT_AUTHOR_NAME: "github-actions[bot]"
+          GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+        run: |
+          # configure git
+          git config user.name "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
+
+          # create temporary worktree for gh-pages branch (create if doesn't exist)
+          git fetch origin gh-pages || true
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+
+          # copy calendar.ics to root of gh-pages branch
+          cp -f ../calendar.ics ./calendar.ics || cp -f calendar.ics ./calendar.ics
+          git add -A calendar.ics
+
+          # commit if changed
+          if git diff --cached --quiet; then
+            echo "No changes to calendar.ics - nothing to commit."
+          else
+            git commit -m "Automated: update calendar.ics ($(date -u +'%Y-%m-%d %H:%M:%S UTC'))"
+            git push -u origin gh-pages --force
+          fi
